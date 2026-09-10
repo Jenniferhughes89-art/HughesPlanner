@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hughes Family Planner</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main class="planner-shell">
+		<section class="welcome-panel" aria-labelledby="planner-title">
+			<div class="panel-topline">
+				<span class="status-dot" aria-label="Live clock"></span>
+			</div>
+
+			<div class="welcome-content">
+				<h1 id="planner-title">Hughes<br><em>Family</em><br>Planner</h1>
+				<div class="rule"></div>
+			</div>
+
+			<div class="clock-block" aria-live="polite">
+				<time id="local-time">--:--</time>
+				<span id="local-date" class="local-date">Loading date...</span>
+			</div>
+
+			<div class="weather-block" aria-live="polite">
+				<div class="weather-heading">
+					<span id="weather-status">Updating...</span>
+				</div>
+				<div id="weather-list" class="weather-list"></div>
+			</div>
+
+		</section>
+
+		<section class="calendar-panel" aria-labelledby="calendar-title">
+				<a class="calendar-link" href="https://calendar.google.com" target="_blank" rel="noreferrer">Open <span aria-hidden="true">↗</span></a>
+			</header>
+
+			<div class="calendar-frame">
+				<iframe id="google-calendar" title="Hughes Family Google Calendar" loading="lazy"></iframe>
+				<div id="calendar-placeholder" class="calendar-placeholder">
+					<strong>Connect your Google Calendar</strong>
+					<span>Paste your Google Calendar embed URL into <code>script.js</code>.</span>
+				</div>
+			</div>
+
+			<div class="slides-block">
+				<div class="slides-heading">
+				</div>
+				<div id="slides-frame" class="slides-frame">
+					<iframe id="google-slides" title="Hughes Family Google Slides" loading="lazy"></iframe>
+					<div id="slides-placeholder" class="slides-placeholder">Paste your Google Slides embed URL into <code>script.js</code>.</div>
+				</div>
+				<a id="google-tasks-link" class="tasks-link" href="https://script.google.com/macros/s/AKfycbw0XEnwt9HD7Y3RkmVBFC5BorQCuKhvksRSOlkhmHOMcSWY1OooR1HlrBLsDDS5L2cgWw/exec" target="_blank" rel="noreferrer">
+					<span><strong>Google Tasks</strong><small>Open family task list</small></span>
+					<span class="tasks-arrow" aria-hidden="true">↗</span>
+				</a>
+			</div>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
