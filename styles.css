@@ -21,9 +21,9 @@ body { margin: 0; background: #000000; color: #ffffff; font-family: 'Manrope', s
 .eyebrow, .section-kicker, .location-label, .clock-label { font-family: inherit; text-transform: uppercase; letter-spacing: 0.08em; }
 .eyebrow { color: var(--sage); font-size: clamp(10px, 0.75vw, 13px); }
 .status-dot { width: 9px; height: 9px; display: block; background: var(--coral); border-radius: 50%; box-shadow: 0 0 0 5px rgba(223, 118, 89, 0.18); }
-.welcome-content { margin: 0; padding: clamp(24px, 3vw, 48px) 0 0; }
+.welcome-content { margin: auto 0; padding: 8vh 0; }
 .location-label { margin: 0 0 24px; color: var(--sage); font-size: clamp(10px, 0.85vw, 14px); }
-h1 { margin: 0; font-size: clamp(32px, 4vw, 72px); font-weight: 700; line-height: 0.93; letter-spacing: -0.06em; }
+h1 { margin: 0; font-size: clamp(48px, 6.1vw, 120px); font-weight: 700; line-height: 0.93; letter-spacing: -0.06em; }
 h1 em { color: var(--sage); font-style: normal; }
 .rule { width: 72px; height: 2px; margin: clamp(28px, 3vw, 48px) 0 20px; background: var(--coral); }
 .welcome-note { max-width: 230px; margin: 0; color: rgba(255, 255, 255, 0.7); font-size: clamp(13px, 1vw, 17px); line-height: 1.5; }
@@ -42,13 +42,9 @@ h1 em { color: var(--sage); font-style: normal; }
 .weather-icon { display: block; margin: 5px 0 3px; font-size: clamp(18px, 1.5vw, 25px); }
 .weather-temperature { display: block; font-size: clamp(10px, 0.8vw, 13px); font-weight: 700; }
 .weather-rain { display: block; margin-top: 3px; color: rgba(255, 255, 255, 0.55); font-family: inherit; font-size: clamp(7px, 0.5vw, 9px); }
-.tasks-block { position: relative; z-index: 1; margin-top: clamp(18px, 2vw, 30px); }
-.tasks-heading { margin-bottom: 8px; color: var(--sage); font-size: clamp(10px, 0.75vw, 13px); text-transform: uppercase; letter-spacing: 0.08em; }
-.tasks-frame { height: clamp(140px, 18vh, 220px); overflow: hidden; background: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); }
-#google-tasks { width: 100%; height: 100%; display: block; border: 0; }
 .slides-block { margin-top: clamp(18px, 2vw, 30px); }
 .slides-heading { margin-bottom: 8px; }
-.slides-frame { position: relative; width: min(100%, 640px); aspect-ratio: 16 / 9; overflow: hidden; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); }
+.slides-frame { position: relative; height: clamp(86px, 10vh, 125px); overflow: hidden; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); }
 #google-slides { width: 100%; height: 100%; display: none; border: 0; }
 .slides-frame.connected #google-slides { display: block; }
 .slides-frame.connected #slides-placeholder { display: none; }
@@ -66,7 +62,7 @@ h1 em { color: var(--sage); font-style: normal; }
 h2 { margin: 0; color: #ffffff; font-size: clamp(34px, 4.2vw, 76px); font-weight: 700; line-height: 0.98; letter-spacing: -0.06em; }
 .calendar-link { flex: 0 0 auto; padding: 12px 16px; color: #ffffff; background: var(--coral); font-family: inherit; font-size: clamp(10px, 0.7vw, 12px); text-decoration: none; text-transform: uppercase; letter-spacing: 0.04em; }
 .calendar-link span { margin-left: 8px; font-size: 15px; }
-.calendar-frame { position: relative; height: min(42vh, 520px); min-height: 280px; overflow: hidden; background: #000000; border: 1px solid rgba(255, 255, 255, 0.25); }
+.calendar-frame { position: relative; height: min(69vh, 760px); min-height: 430px; overflow: hidden; background: #000000; border: 1px solid rgba(255, 255, 255, 0.25); }
 #google-calendar { width: 100%; height: 100%; display: none; border: 0; }
 .calendar-frame.connected #google-calendar { display: block; }
 .calendar-frame.connected #calendar-placeholder { display: none; }
@@ -80,8 +76,7 @@ code { padding: 3px 6px; color: #ffffff; background: #1c1c1c; font-family: inher
 	.welcome-panel, .calendar-panel { min-height: auto; }
 	.welcome-panel { min-height: 54vh; }
 	.calendar-panel { min-height: 46vh; padding-top: 42px; padding-bottom: 42px; }
-	.calendar-frame { min-height: 360px; }
-	.slides-frame { width: 100%; }
+	.calendar-frame { min-height: 500px; }
 }
 
 @media (prefers-reduced-motion: no-preference) {

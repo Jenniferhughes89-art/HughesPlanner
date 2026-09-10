@@ -7,11 +7,11 @@ const timeElement = document.querySelector('#local-time');
 const dateElement = document.querySelector('#local-date');
 const calendarFrame = document.querySelector('.calendar-frame');
 const calendarElement = document.querySelector('#google-calendar');
-const weatherList = document.querySelector('#weather-list');
+const useweatherList = document.querySelector('#weather-list');
 const weatherStatus = document.querySelector('#weather-status');
 const slidesFrame = document.querySelector('#slides-frame');
 const slidesElement = document.querySelector('#google-slides');
-const tasksElement = document.querySelector('#google-tasks');
+const tasksLink = document.querySelector('#google-tasks-link');
 
 function updateClock() {
 	const now = new Date();
@@ -82,8 +82,7 @@ function loadSlides() {
 }
 
 function connectTasks() {
-	if (!GOOGLE_TASKS_URL) return;
-	tasksElement.src = GOOGLE_TASKS_URL;
+	tasksLink.href = GOOGLE_TASKS_URL;
 }
 
 updateClock();
